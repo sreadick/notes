@@ -10,11 +10,13 @@ import NotFound from '../ui/NotFound';
 
 const unauthenticatedPages = ['/', '/signup'];
 const authenticatedPages = ['/dashboard'];
+
 const onEnterPublicPage = () => {
   if (Meteor.userId()) {
     browserHistory.replace('/dashboard');
   }
 };
+
 const onEnterPrivatePage = () => {
   if (!Meteor.userId()) {
     browserHistory.replace('/');
