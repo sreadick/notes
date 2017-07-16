@@ -9,8 +9,13 @@ export default Dashboard = () => {
     <div>
       <PrivateHeader title="Dashboard"/>
       <div className="page-content">
-        <NoteList/>
-        <Editor/>
+        <div className="page-content_sidebar">
+          <NoteList/>
+        </div>
+        <div className="page-content_main">
+          <Editor/>
+        </div>
+
       </div>
     </div>
   );
