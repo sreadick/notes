@@ -18,7 +18,6 @@ export const NoteList = (props) => {
         ? <NoteListEmptyItem/>
         : props.notes.map((note) => <NoteListItem key={note._id} note={note} />)
       }
-      NoteList { props.notes.length }
     </div>
   );
 }
