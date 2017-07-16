@@ -18,8 +18,8 @@ export class Editor extends React.Component {
   handleChange(e) {
     this.setState({ [e.target.name]: e.target.value });
     this.props.call('notes.update', this.props.note._id, {
-      [e.target.name]: e.target.value}
-    );
+      [e.target.name]: e.target.value
+    });
   }
   handleRemoval() {
     this.props.call('notes.remove', this.props.note._id);
@@ -48,7 +48,7 @@ export class Editor extends React.Component {
     } else {
       return (
         <p>
-            { this.props.selectedNoteId ? "Note not found." : "Pick or create a note to get started." }
+          { this.props.selectedNoteId ? "Note not found." : "Pick or create a note to get started." }
         </p>
       );
     }
