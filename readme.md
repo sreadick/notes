@@ -4,14 +4,14 @@ This is a note application built on Meteor.
 
 ## Getting Started
 
-After installing Meteor, you can clone the repo and run the following:
+After installing Meteor, clone this repo and run the following:
 
 ```
 meteor npm install
 ```
 
 ```
-meteor npm install
+meteor
 ```
 
 ## Running the Tests
